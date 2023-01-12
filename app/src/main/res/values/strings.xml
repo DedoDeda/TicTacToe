@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">XO</string>
+    <string name="x_turn">X TURN</string>
+    <string name="o_turn">O TURN</string>
+    <string name="x_won">X WON!</string>
+    <string name="o_won">O WON!</string>
+    <string name="draw">DRAW</string>
+    <string name="restart">RESTART</string>
+</resources>

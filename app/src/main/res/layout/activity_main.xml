@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtview_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="@string/x_turn"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/table_board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/table_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgview_cell_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+            <ImageView
+                android:id="@+id/imgview_cell_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+            <ImageView
+                android:id="@+id/imgview_cell_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgview_cell_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+            <ImageView
+                android:id="@+id/imgview_cell_5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+            <ImageView
+                android:id="@+id/imgview_cell_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgview_cell_7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+            <ImageView
+                android:id="@+id/imgview_cell_8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+            <ImageView
+                android:id="@+id/imgview_cell_9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cell_empty" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_board" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
